@@ -1,11 +1,19 @@
 {
-  "name": "sass-extract",
+  "name": "sass-extract-vars",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "babel --out-dir ./dist index.js && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Weider Lima <weider86@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-sass-extract": "^0.1.0",
+    "node-sass": "^4.14.1",
+    "sass-extract": "^2.1.0"
+  }
 }
